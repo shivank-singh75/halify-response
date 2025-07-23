@@ -1,0 +1,14 @@
+{
+  "name": "halify-response",
+  "version": "1.0.0",
+  "description": "Helper utilities for HAL-style API responses in Express.js",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": ["hal", "api", "response", "express", "rest", "json", "helper"],
+  "author": "Shivank Singh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/halify-response.git"
+  }
+}
