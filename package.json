@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Helper utilities for HAL-style API responses in Express.js",
   "main": "src/index.js",
-  "type": "module",
+  "types": "types/index.d.ts",
   "keywords": [
     "hal",
     "api",
