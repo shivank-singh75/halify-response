@@ -1,5 +1,3 @@
-let hal = require("hal");
-
 /**
  * Build a HAL-formatted response after updating a resource
  * 

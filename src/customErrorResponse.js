@@ -1,5 +1,3 @@
-let hal = require("hal");
-
 /**
  * Build a custom error response with a single key-message pair
  * 

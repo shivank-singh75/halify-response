@@ -1,5 +1,3 @@
-let hal = require("hal");
-
 /**
  * Build a structured validation error response
  * 

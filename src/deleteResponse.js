@@ -1,5 +1,3 @@
-let hal = require("hal");
-
 /**
  * Build a HAL-formatted response for a deleted resource
  * 

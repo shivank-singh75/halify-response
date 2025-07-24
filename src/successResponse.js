@@ -1,5 +1,3 @@
-let hal = require("hal");
-
 /**
  * Send a HAL-formatted success response
  * 
