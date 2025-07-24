@@ -15,26 +15,26 @@ let hal = require("hal");
  * 
  * @returns {Object} - A structured HAL-formatted response object with pagination metadata
  */
-export async function paginatedResponse(moduleName, dataList, selfUrl, firstPageUrl, lastPageUrl, currentPage, totalPages, itemsPerPage, totalItems) {
+export async function paginatedResponse(moduleName, dataArr, selfUrl, firstUrl, lastUrl, page, pageCount, pageSize, total) {
     // Clone the data to avoid mutation
-    const clonedDataList = JSON.parse(JSON.stringify(dataList));
+    const clonedDataList = JSON.parse(JSON.stringify(dataArr));
   
     // Prepare HAL-like response structure
     const response = {
+      success: true,
+      name: moduleName,
       _embedded: {
         data: clonedDataList
       },
       _links: {
         self: { href: selfUrl },
-        first: { href: firstPageUrl },
-        last: { href: lastPageUrl }
+        first: { href: firstUrl },
+        last: { href: lastUrl }
       },
-      name: moduleName,
-      page: currentPage,
-      pageCount: totalPages,
-      pageSize: itemsPerPage,
-      total: totalItems,
-      success: true
+      page: page,
+      pageCount: pageCount,
+      pageSize: pageSize,
+      total: total,
     };
   
     return response;

@@ -1,41 +1,35 @@
 declare module 'halify-response' {
   export function successResponse(
-    res: any,
+    moduleName: string,
     message: string,
-    httpCode?: number,
+    selfUrl: string,
     data?: any
   ): any;
 
   export function createResponse(
-    res: any,
-    message: string,
-    httpCode?: number,
-    data?: any
+    moduleName: string, 
+    data: any, 
+    selfUrl: string
   ): any;
 
   export function detailResponse(
-    res: any,
-    message: string,
-    httpCode?: number,
-    data?: any
+    moduleName: string, 
+    data: any, 
+    selfUrl: string
   ): any;
 
   export function updateResponse(
-    res: any,
-    message: string,
-    httpCode?: number,
-    data?: any
+    moduleName: string, 
+    data: any, 
+    selfUrl: string
   ): any;
 
   export function deleteResponse(
-    res: any,
-    message: string,
-    httpCode?: number,
-    data?: any
+    moduleName: string, 
+    selfUrl?: string
   ): any;
 
   export function paginatedResponse(
-    res: any,
     moduleName: string,
     dataArr: any[],
     selfUrl: string,
