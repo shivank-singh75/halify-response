@@ -21,6 +21,6 @@ export function successResponse(moduleName, message, selfUrl, attributes=null) {
     if(attributes){
         response.attributes = attributes;
     }
-
     response.message = message;
+    return response;
 }
